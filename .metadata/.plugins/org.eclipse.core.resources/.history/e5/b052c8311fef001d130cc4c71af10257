@@ -8,8 +8,7 @@ public class Ex01 {
 		String x = "aabbccdef12";
 		String y = "abcfgh12";
 		makeSimilar(x, y);
-		System.out.println("===================");
-		System.out.println("Có phải là chuỗi con không? \n " + isSubstring(x, y));
+
 	}
 
 	public static void makeSimilar(String X, String Y) {
@@ -65,19 +64,5 @@ public class Ex01 {
 		System.out.println("Y after adding characters: " + newY);
 		System.out.println("Common characters: " + commonChars);
 	}
-	 // Kiểm tra X có phải là xâu con của Y hay không
-    public static boolean isSubstring(String X, String Y) {
-        char[] arrX = X.toCharArray();
-        char[] arrY = Y.toCharArray();
-        
-        int i = 0, j = 0;
-        while (i < arrX.length && j < arrY.length) {
-            if (arrX[i] == arrY[j]) {
-                i++;
-            }
-            j++;
-        }
-        return i == arrX.length;
-    }
 
 }

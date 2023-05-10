@@ -8,8 +8,7 @@ public class Ex01 {
 		String x = "aabbccdef12";
 		String y = "abcfgh12";
 		makeSimilar(x, y);
-		System.out.println("===================");
-		System.out.println("Có phải là chuỗi con không? \n " + isSubstring(x, y));
+		isSubstring(x, y);
 	}
 
 	public static void makeSimilar(String X, String Y) {

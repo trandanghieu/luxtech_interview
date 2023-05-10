@@ -9,7 +9,7 @@ public class Ex01 {
 		String y = "abcfgh12";
 		makeSimilar(x, y);
 		System.out.println("===================");
-		System.out.println("Có phải là chuỗi con không? \n " + isSubstring(x, y));
+		System.out.println("Có phải là chuỗi con không? " + isSubstring(x, y));
 	}
 
 	public static void makeSimilar(String X, String Y) {
